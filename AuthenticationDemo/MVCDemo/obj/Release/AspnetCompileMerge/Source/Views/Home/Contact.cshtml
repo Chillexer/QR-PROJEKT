@@ -1,0 +1,50 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR PROJEKT</title>
+    <link rel="stylesheet" href="~/Content/Contact.css">
+    @Scripts.Render("~/bundles/jquery")
+</head>
+<body>
+    <img src="~/Content/Images/LOGO.png" alt="" id="TECLOGO">
+    <span class="HorizontalLine"></span>
+    <div id="Employee">
+        <div id="ImageDiv">
+                <img id="Img" src="" alt="">
+        </div>
+        
+        <span class="VerticalLine"></span>
+        <div id="Felter">
+        <p id="Name"></p>
+        <p id="Phone"></p>
+        <p id="Mail"></p>
+        </div>
+    </div>
+    <span class="HorizontalLine"></span>
+    <h1 id="Title">Aftal Møde</h1>
+    <form id="Form" action="">
+        <div id="Sending">
+                <div class="loader"></div>
+                <div class="mailsent">
+                <h1>En mail er blevet sendt til </h1>
+                <img src="~/Content/Images/mail.png" alt="" >
+                </div>
+        <input type="text" name="Name" required id="NameForm" placeholder="Navn">
+        <input type="text" name="Email" required id="EmailForm" placeholder="Email">
+        <input type="text" name="Phone" required id="PhoneForm" placeholder="Telefon">
+        <input type="text" name="Virksomhed" required id="VirsomhedForm" placeholder="Virksomhed">
+        <input type="text" name="Stilling" required id="StillingForm" placeholder="Stilling">
+        <textarea name="Note" placeholder="Note" id="NoteForm" rows="6"></textarea>
+        </div>
+        <input type="submit" placeholder="Send" value="Send">
+    </form>
+    <script src="~/Content/Contact.js"></script>
+</body>
+</html>

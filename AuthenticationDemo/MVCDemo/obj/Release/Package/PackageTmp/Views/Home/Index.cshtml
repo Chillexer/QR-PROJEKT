@@ -1,0 +1,39 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<button id="deleteBtn">SLET</button>
+<div class="containers">
+    <h2>Opret, Rediger Og Slet Kontakter Her</h2>
+    <h3>Sørg for at telefon feltet er udfyldt på denne måde "+45 60 60 60 60" Kontakt Email er ikke nødvendig at udfylde</h3>
+    <p>OBS! Husk at vælge et billede</p>
+    <select name="" id="selector">
+        <option value="2">Frederik</option>
+        <option value="3">Michael</option>
+    </select>
+    <form action="" id="createedit" method="post">
+        <input type="file" oninvalid="imageinvalid()" name="img" id="img" accept="image/*">
+        <label for="img"><strong><svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"></path></svg> Vælg et billede…</strong></label>
+        <p id="ErrorMessage" style="text-align: center; color: red; display:none;">!Du mangler at vælge et billede eller at valgte billede ikke kan uploades! (Sørg for at billederne ligger på den lokale maskine)</p>
+        <img src="" alt="" id="FormImg">
+        <input type="text" hidden style="display:none;" id="FormId" />
+        <input type="text" required placeholder="Navn" name="" id="FormName">
+        <label class="label-info" style="font-size: 100%;" for="FormName">Navn</label>
+        <input type="text" required placeholder="Email" name="" id="FormEmail">
+        <label class="label-info" style="font-size: 100%;" for="FormEmail">Email</label>
+        <input type="text" placeholder="Kontakt Email" name="" id="FormContactEmail">
+        <label class="label-info" style="font-size: 100%;" for="FormContactEmail">Kontakt Email</label>
+        <input type="text" required placeholder="Telefon" name="" id="FormPhone">
+        <label class="label-info" style="font-size: 100%;" for="FormPhone">Telefon</label>
+        <input type="submit" placeholder="Gem Profil" value="Gem Profil">
+    </form>
+    <div style="margin-top: 20px;">
+        <a href="#" target="_blank" id="qrcodeurl"></a>
+    </div>
+    <div style="margin-top: 10px;" id="qrcode"></div>
+</div>
+@Scripts.Render("~/bundles/QRCODE")
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/IndexScript")
+@*<script src="edit.js"></script>*@

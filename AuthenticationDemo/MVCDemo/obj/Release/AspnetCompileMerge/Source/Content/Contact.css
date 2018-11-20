@@ -1,0 +1,306 @@
+﻿
+#Img {
+    border-radius: 50%;
+    height: 115px;
+    float: left;
+    width: 115px;
+    object-fit: cover;
+    object-position: center center;
+}
+
+#ImageDiv {
+    margin: 0 2.5% 0 2.5%;
+    width: 100%;
+    height: 100%;
+}
+
+#Employee {
+    display: flex;
+    height: 115px;
+}
+
+    #Employee div:nth-of-type(1) {
+        padding: 0%;
+        width: 30%;
+    }
+
+#Name, #Phone, #Mail {
+    font-size: 130%;
+    margin: 10px 0 0 30px;
+    color: white;
+}
+
+.VerticalLine {
+    width: 1px;
+    height: 100%;
+    background: rgb(221, 221, 221);
+}
+
+.HorizontalLine {
+    margin: 2.5% 2.5% 2.5% 2.5%;
+    width: 95%;
+    height: 1px;
+    background: rgb(221, 221, 221);
+    display: block;
+}
+
+#TECLOGO {
+    width: 90%;
+    padding: 0 5% 0 5%;
+    margin-bottom: 0;
+}
+
+html {
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background: linear-gradient(135deg,#28cdaf, #184888 /*, #bf65a9, #f74c4b*/ );
+}
+
+body {
+    min-height: 100%;
+    margin: 0;
+    font-family: 'Circular Book';
+    font-weight: normal;
+}
+
+h1 {
+    text-align: center;
+    color: White;
+    font-size: 250%;
+    margin-bottom: 9px;
+    font-family: 'Circular Bold';
+    font-weight: normal;
+}
+
+#Sending h1 {
+    font-size: 170%;
+}
+
+#Sending {
+    /* display: none; */
+    margin-bottom: 3%;
+    margin-top: 3%;
+    position: relative;
+}
+
+#Form {
+    display: block;
+    padding: 0 5% 0 5%;
+}
+
+.mailsent {
+    display: none;
+    color: white;
+    width: 100%;
+    position: relative;
+    height: 400px;
+}
+
+    .mailsent img {
+        position: absolute;
+        top: 40%;
+        right: 50%;
+        transform: translate(50%,-50%);
+    }
+
+.loader {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%,-50%);
+    display: none;
+    border: 30px solid #dbdbdb; /* Light grey */
+    border-top: 30px solid #3498db;
+    /* border-bottom: 30px solid #3498db; */
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: translate(50%,-50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(50%,-50%) rotate(360deg);
+    }
+}
+
+#Form #NameForm {
+    margin-top: 0;
+}
+
+#Form input {
+    width: calc(100% - 20px);
+    border: none;
+    margin: 3% 0 3% 0;
+    height: 35px;
+    font-size: 130%;
+    background: white;
+    padding: 0 10px 0 10px;
+    color: #7c7c7c;
+    font-family: 'Circular Book';
+    font-weight: normal;
+}
+
+#Form textarea {
+    width: calc(100% - 20px);
+    border: none;
+    resize: none;
+    margin: 3% 0 0 0;
+    background: white;
+    padding: 0 10px 0 10px;
+    color: #7c7c7c;
+    font-family: 'Circular Book';
+    font-weight: normal;
+    font-size: 130%;
+}
+
+#Form input[type = "submit"] {
+    /* background: #184888; gamle farve */
+    background: #132d50;
+    height: 50px;
+    width: calc(100%);
+    color: #28cdaf;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    -webkit-appearance: none;
+}
+
+::-webkit-input-placeholder {
+    text-align: center;
+}
+
+#Form input[type = "text"]:-moz-placeholder { /* Firefox 18- */
+    text-align: center;
+}
+
+#Form input[type = "text"]::-moz-placeholder { /* Firefox 19+ */
+    text-align: center;
+}
+
+#Form input[type = "text"]:-ms-input-placeholder {
+    text-align: center;
+}
+
+@font-face {
+    font-family: 'Circular Book';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Circular Book'), url('Font/lineto-circular-pro-book.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Circular Book Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Circular Book Italic'), url('Font/lineto-circular-pro-bookItalic.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Circular Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Circular Medium'), url('Font/lineto-circular-pro-medium.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Circular Medium Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Circular Medium Italic'), url('Font/lineto-circular-pro-mediumItalic.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Circular Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Circular Bold'), url('Font/lineto-circular-pro-bold.woff') format('woff');
+}
+
+@media only screen and (min-width: 550px) {
+    .VerticalLine {
+        display: none;
+    }
+
+    #Felter {
+        float: right;
+        width: 70%;
+        text-align: right;
+        padding-right: 5%;
+    }
+
+    #Form {
+        padding: 0 15% 0 15%;
+    }
+
+        #Form input {
+            height: 62px;
+            width: 100%;
+            margin: 2% 0 2% 0;
+        }
+
+        #Form textarea {
+            height: 200px;
+            width: 100%;
+            margin: 2% 0 2% 0;
+        }
+
+        #Form input[type = "submit"] {
+            height: 85px;
+            width: calc(100% + 20px);
+            margin: 2% 0 2% 0;
+        }
+
+    h1 {
+        font-size: 370%;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    #Employee {
+        display: flex;
+        height: 200px;
+    }
+
+    #Img {
+        height: 200px;
+        width: 200px;
+    }
+
+    #Felter {
+        float: right;
+        width: 70%;
+        text-align: right;
+        padding-right: 5%;
+        font-size: 200%;
+    }
+
+    #Form textarea {
+        font-size: 200%;
+    }
+
+    #Form input {
+        font-size: 200%;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .VerticalLine {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    html {
+        padding: 0 20% 0 20%;
+    }
+}

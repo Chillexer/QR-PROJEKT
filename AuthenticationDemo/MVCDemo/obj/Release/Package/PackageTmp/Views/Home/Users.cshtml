@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.Title = "Users";
+}
+<style>
+    #registerLink{
+        display:flex;
+        float:right;
+    }
+</style>
+<div class="containers">
+    <h2>@ViewBag.Title.</h2>
+    <div>
+        <h3>Manage Users</h3>
+            @Html.ActionLink("Register", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink", @class = "btn btn-primary btn-sm"})
+    </div>
+
+    <p>Her kan der slettes og oprettes brugere</p>
+
+    <table class="table table-striped" id="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Username</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</div>
+<script src="~/Content/Users.js"></script>
