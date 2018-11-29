@@ -9,3 +9,7 @@
   Standard Login til hjemmeside er
   Brugernavn: admin@admin.dk
   Kode: Passw0rd
+
+# IIS SERVER CONFIG
+  1. App Pool skal have adgang til at modificere Content mappen og alle underliggende mapper
+  2. Der skal gives adgang til Directory Browsing for Content Mappen
