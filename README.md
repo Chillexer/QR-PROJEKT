@@ -15,9 +15,9 @@
   2. Der skal gives adgang til Directory Browsing for Content Mappen
 
 # Test Side Adgang
-  URL til side: http://188.179.204.156:4000
-  URL til en testkontakt: http://188.179.204.156:4000/Home/Contact/4
-  Maks længde for nr og email er 15 karakterer. Navnet kan ikke indeholde mere end 15 karaktere per navn i navnet.
-  Standard Login til hjemmeside er
-  Brugernavn: admin@admin.dk
-  Kode: Passw0rd
+  * URL til side: http://188.179.204.156:4000
+  * URL til en testkontakt: http://188.179.204.156:4000/Home/Contact/4
+  * Maks længde for nr og email er 15 karakterer. Navnet kan ikke indeholde mere end 15 karaktere per navn i navnet.
+  * Standard Login til hjemmeside er
+  * Brugernavn: admin@admin.dk
+  * Kode: Passw0rd
