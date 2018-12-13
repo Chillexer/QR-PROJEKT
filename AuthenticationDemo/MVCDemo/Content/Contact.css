@@ -16,7 +16,7 @@
 
 #Employee {
     display: flex;
-    height: 115px;
+    /*height: 115px; */
 }
 
     #Employee div:nth-of-type(1) {
